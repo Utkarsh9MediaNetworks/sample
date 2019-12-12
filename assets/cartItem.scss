@@ -1,0 +1,84 @@
+@import "../assets/mixins.scss";
+
+.cart-card{
+    width: 98%;
+    height: 20%;
+    background-color: #f2f2fc;
+    margin: 1%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart-card-image{
+    text-align: left;
+    img{
+        height: 14vh;
+    }
+    @include for-size(phone-only) {
+        
+    }
+    @include for-size(desktop-up) {
+       
+    }
+}
+
+.cart-card-detail{
+    @include for-size(phone-only) {
+        
+    }
+    @include for-size(desktop-up) {
+       
+    }
+}
+
+.cart-card-detail div{
+    padding: 10% 0;
+    font-size: 0.9rem;
+    @include for-size(phone-only) {
+        
+    }
+    @include for-size(desktop-up) {
+       
+    }
+}
+
+.cart-item-input{
+    text-align: center;
+    span {
+        padding: 10% 1%;
+        font-size: 0.9rem;
+    }
+    i {
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+    }
+    input {
+        width: 30%;
+    }
+
+    @include for-size(phone-only) {
+        
+    }
+    @include for-size(desktop-up) {
+       
+    }
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.cart-item-remove{
+    @include for-size(phone-only) {
+        
+    }
+    @include for-size(desktop-up) {
+       
+    }
+}

@@ -1,0 +1,74 @@
+@import "../assets/mixins.scss";
+
+.header-title {
+  font-size: 1rem;
+  @include for-size(phone-only) {
+    font-size: 1rem;
+  }
+}
+
+.nav-wrapper{
+  color: #fff;
+  background-color: #4269ea;
+  width: 100%;
+  line-height: 56px;
+  @include for-size(phone-only) {
+    height: 56px;
+  }
+  @include for-size(desktop-up) {
+   height: 56px;
+  }
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0;
+  @include for-size(phone-only) {
+    left: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  @include for-size(desktop-up) {
+    left: 3%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  // background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  // background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.icons {
+  @include for-size(phone-only) {
+    margin: auto 4%;
+  }
+  @include for-size(desktop-up) {
+    margin: auto 2%;
+  }
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

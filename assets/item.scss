@@ -1,0 +1,57 @@
+@import "../assets/mixins.scss";
+
+.card{
+    margin: 1% 1%;
+    text-align: center;
+    background-color: #cfcfdc;
+    display: flex;
+    flex-direction: column;
+    @include for-size(phone-only) {
+        width: 31%;
+        height: 32%;
+        font-size: 0.7em;
+    }
+    @include for-size(desktop-up) {
+        width: 23%;
+        height: 33%;
+    }
+}
+
+.card-image{
+    width: 100%;
+    text-align: center;
+    height: 60%;
+    img{
+        height: 100%;
+    }
+}
+
+.item-name{
+    text-align: left;
+    margin-left: 23%;
+}
+
+.addtocart{
+    background-color: #eea723;
+    border: none;
+    border-radius: 30%;
+    color: black;
+    height: 83%;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+
+    @include for-size(phone-only) {
+        width: 88%;
+    }
+    @include for-size(desktop-up) {
+        width: 65%;
+    }
+}
+

@@ -1,0 +1,72 @@
+@import "../assets/mixins.scss";
+
+.price-data{
+    background-color: #f2f2fc;
+    width: 95%;
+    margin: 1.5% auto;
+    border: 1px solid black;
+
+    @include for-size(phone-only) {
+        height: 100%
+    }
+    @include for-size(desktop-up) {
+        height: 30%;
+    }
+}
+
+.priceDetails-heading{
+    color: gray;
+    font-weight: 700;
+    border-bottom: 0.1px solid gray;
+    padding: 1%;
+}
+
+.priceDetails-data{
+    padding: 1%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.priceDetails-data div{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-data-section1{
+    padding: 1%;
+    flex-grow: 1;
+    @include for-size(phone-only) {
+        width: 40%;
+    }
+    @include for-size(desktop-up) {
+        width: 20%;
+    }
+}
+
+.price-data-section2{
+    padding: 1%;
+    flex-grow: 1;
+    
+}
+
+.price-data-section3{
+    padding: 1%;
+    flex-grow: 8;
+    text-align: right;
+    
+}
+
+.priceDetails-total{
+    padding: 1%;
+    height: 10%;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+}

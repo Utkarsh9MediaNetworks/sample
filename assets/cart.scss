@@ -1,0 +1,40 @@
+@import "../assets/mixins.scss";
+
+.cart-body{    
+    display: flex;
+    overflow: scroll;
+    @include for-size(phone-only) {
+        width: 100vw;
+        height: 82vh;
+        flex-direction: column;
+    }
+    @include for-size(desktop-up) {
+        width: 100vw;
+        height: 85vh;
+        flex-direction: row;
+    }
+}
+
+.cart-body::-webkit-scrollbar{
+    display: none;
+}
+
+.cart-section1{
+    @include for-size(phone-only) {
+        width: 100vw;
+    }
+    @include for-size(desktop-up) {
+        width: 58vw;
+        margin: 1%;
+    }
+}
+
+.cart-section2{
+    @include for-size(phone-only) {
+        width: 100vw;
+    }
+    @include for-size(desktop-up) {
+        width: 38vw;
+        margin: 1%;
+    }
+}
