@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../../assets/home.scss';
 import Item from './Item';
 import RangeSelector from './RangeSelector';
-import Modal from './Modal'
 import { connect } from 'react-redux';
 import { fetchProducts,sortPrizeHigh,sortPrizeLow,sortDiscount } from "./actions/cartActions";
 
@@ -51,7 +50,7 @@ class Home extends React.Component{
                     <div className="filter">
                         <span className="filterDesktop">Filter
                             <div className="filterSelector">
-                                <RangeSelector/>
+                                <RangeSelector />
                             </div>
                         </span>
                         <span className="filterphone"><i className="fa fa-filter" aria-hidden="true"></i>Filter</span>
